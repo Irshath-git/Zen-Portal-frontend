@@ -8,7 +8,7 @@ function Topbar() {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:4000/api/logout");
+      await axios.post("https://zen-portal-clone.onrender.com/api/logout");
       navigate("/");
       alert("Session Logging Out");
     } catch (error) {
